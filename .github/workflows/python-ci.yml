@@ -14,7 +14,7 @@ on:
         description: 'Path to the settings file'
         required: false
         type: string
-        default: 'settings.yaml'
+        default: 'settings.yml'
       docker-file-path:
         description: 'Path to the Dockerfile'
         required: false
@@ -80,3 +80,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULL_REQUEST_BRANCH: "main"
+          
